@@ -1,0 +1,171 @@
+swagger: "2.0"
+info:
+  version: "1.0.1"
+  title: MRT train
+# during dev, should point to your local machine
+host: localhost:3000
+# basePath prefixes all resource paths
+basePath: /
+#
+schemes:
+  # tip: remove http to make production-grade
+  - http
+  - https
+# format of bodies a client can send (Content-Type)
+consumes:
+  - application/json
+# format of the responses to the client (Accepts)
+produces:
+  - application/json
+paths:
+  /path:
+    get:
+      description: Returns Path from start point to end point
+      parameters:
+        - name: start
+          in: query
+          description: start train stop code (EW21, DT12...)
+          required: true
+          type: string
+        - name: end
+          in: query
+          description: end stop strop stop name (EW21, DT12...)
+          required: true
+          type: string          
+        - name: startAT
+          in: query
+          description: start time ("YYYY-MM-DDThh:mm" format, e.g. '2019-01-31T16:00'
+          required: false
+          type: string
+      responses:
+        "200":
+          description: Success
+          schema:
+            # a pointer to a definition
+            $ref: "#/definitions/path"
+        # responses may fall through to errors
+        default:
+          description: Error
+          schema:
+            $ref: "#/definitions/pathError"
+  /path/now:
+    get:
+      description: Returns Path from start point to end point at the current time
+      parameters:
+        - name: start
+          in: query
+          description: start train stop code (EW21, DT12...)
+          required: true
+          type: string
+        - name: end
+          in: query
+          description: end stop strop stop name (EW21, DT12...)
+          required: true
+          type: string
+      responses:
+        "200":
+          description: Success
+          schema:
+            # a pointer to a definition
+            $ref: "#/definitions/path"
+        # responses may fall through to errors
+        default:
+          description: Error
+          schema:
+            $ref: "#/definitions/pathError"
+  /path/nightTime:
+      get:
+        description: Returns Path from start point to end point during night hour
+        parameters:
+          - name: start
+            in: query
+            description: start train stop code (EW21, DT12...)
+            required: true
+            type: string
+          - name: end
+            in: query
+            description: end stop strop stop name (EW21, DT12...)
+            required: true
+            type: string
+        responses:
+          "200":
+            description: Success
+            schema:
+              # a pointer to a definition
+              $ref: "#/definitions/path"
+          # responses may fall through to errors
+          default:
+            description: Error
+            schema:
+              $ref: "#/definitions/pathError"
+  /path/peakHour:
+      get:
+        description: Returns Path from start point to end point during peak hour
+        parameters:
+          - name: start
+            in: query
+            description: start train stop code (EW21, DT12...)
+            required: true
+            type: string
+          - name: end
+            in: query
+            description: end stop strop stop name (EW21, DT12...)
+            required: true
+            type: string
+        responses:
+          "200":
+            description: Success
+            schema:
+              $ref: "#/definitions/path"
+          default:
+            description: Error
+            schema:
+              $ref: "#/definitions/pathError"
+  /path/nonPeakHour:
+      get:
+        description: Returns Path from start point to end point during non peak hour
+        parameters:
+          - name: start
+            in: query
+            description: start train stop code (EW21, DT12...)
+            required: true
+            type: string
+          - name: end
+            in: query
+            description: end stop strop stop name (EW21, DT12...)
+            required: true
+            type: string
+        responses:
+          "200":
+            description: Success
+            schema:
+              $ref: "#/definitions/path"
+          default:
+            description: Error
+            schema:
+              $ref: "#/definitions/pathError"
+  /swagger:
+    x-swagger-pipe: swagger_raw
+definitions:
+  path:
+    properties:
+      description:
+        type: string
+      route:
+        type: array
+        items:
+          type: string
+      changeLine:
+        type: integer
+      details:
+        type: array
+        items:
+          type: string
+      time:
+        type: integer
+      type:
+        type: string
+  pathError:
+    properties:
+      error:
+        type: string

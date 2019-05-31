@@ -1,0 +1,33 @@
+{
+  "name": "zendesk-backend-exercice-luong-paul",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prettier": "prettier --write --print-width 100 --tab-width 4 \"src/**/*.js\"",
+    "test": "mocha src/tests/*.test.js ",
+    "build:graph": "node src/service/graph/buildGraph.js src/graphs/StationMap.csv src/graphs/mrtMaps.json",
+    "swagger:build": "js-yaml ./api/swagger/swagger.yaml > swagger.json",
+    "swagger:edit": "swagger project edit",
+    "start": " node app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cookie-parser": "^1.4.4",
+    "csv-parser": "^2.3.0",
+    "express": "^4.17.1",
+    "http-errors": "^1.7.2",
+    "moment": "^2.24.0",
+    "morgan": "^1.9.1",
+    "swagger-ui-express": "^4.0.5"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "js-yaml": "^3.13.1",
+    "mocha": "^6.1.4",
+    "prettier": "^1.17.1",
+    "swagger": "^0.7.5",
+    "swagger-editor": "^3.6.29"
+  }
+}

@@ -1,0 +1,560 @@
+{
+  "nodes": [
+    "Jurong East",
+    "Bukit Batok",
+    "Bukit Gombak",
+    "Choa Chu Kang",
+    "Yew Tee",
+    "Outram Park",
+    "Tiong Bahru",
+    "Redhill",
+    "Queenstown",
+    "Commonwealth",
+    "Buona Vista",
+    "Dover",
+    "Clementi",
+    "Chinese Garden",
+    "Botanic Gardens",
+    "Farrer Road",
+    "Holland Village",
+    "one-north",
+    "Kent Ridge",
+    "Haw Par Villa"
+  ],
+  "adjacencyList": {
+    "Jurong East": [
+      {
+        "originCode": "NS1",
+        "originOpeningDate": "10 March 1990",
+        "node": "Bukit Batok",
+        "destinationOpeningDate": "10 March 1990",
+        "destinationCode": "NS2",
+        "weight": {
+          "peakHour": 12,
+          "nonPeakHour": 10,
+          "nightTime": 10,
+          "default": 1
+        }
+      },
+      {
+        "originCode": "EW24",
+        "originOpeningDate": "5 November 1988",
+        "node": "Clementi",
+        "destinationOpeningDate": "12 March 1988",
+        "destinationCode": "EW23",
+        "weight": {
+          "peakHour": 10,
+          "nonPeakHour": 10,
+          "nightTime": 10,
+          "default": 1
+        }
+      },
+      {
+        "originCode": "EW24",
+        "originOpeningDate": "5 November 1988",
+        "node": "Chinese Garden",
+        "destinationOpeningDate": "5 November 1988",
+        "destinationCode": "EW25",
+        "weight": {
+          "peakHour": 10,
+          "nonPeakHour": 10,
+          "nightTime": 10,
+          "default": 1
+        }
+      }
+    ],
+    "Bukit Batok": [
+      {
+        "originCode": "NS2",
+        "originOpeningDate": "10 March 1990",
+        "node": "Jurong East",
+        "destinationOpeningDate": "10 March 1990",
+        "destinationCode": "NS1",
+        "weight": {
+          "peakHour": 12,
+          "nonPeakHour": 10,
+          "nightTime": 10,
+          "default": 1
+        }
+      },
+      {
+        "originCode": "NS2",
+        "originOpeningDate": "10 March 1990",
+        "node": "Bukit Gombak",
+        "destinationOpeningDate": "10 March 1990",
+        "destinationCode": "NS3",
+        "weight": {
+          "peakHour": 12,
+          "nonPeakHour": 10,
+          "nightTime": 10,
+          "default": 1
+        }
+      }
+    ],
+    "Bukit Gombak": [
+      {
+        "originCode": "NS3",
+        "originOpeningDate": "10 March 1990",
+        "node": "Bukit Batok",
+        "destinationOpeningDate": "10 March 1990",
+        "destinationCode": "NS2",
+        "weight": {
+          "peakHour": 12,
+          "nonPeakHour": 10,
+          "nightTime": 10,
+          "default": 1
+        }
+      },
+      {
+        "originCode": "NS3",
+        "originOpeningDate": "10 March 1990",
+        "node": "Choa Chu Kang",
+        "destinationOpeningDate": "10 March 1990",
+        "destinationCode": "NS4",
+        "weight": {
+          "peakHour": 12,
+          "nonPeakHour": 10,
+          "nightTime": 10,
+          "default": 1
+        }
+      }
+    ],
+    "Choa Chu Kang": [
+      {
+        "originCode": "NS4",
+        "originOpeningDate": "10 March 1990",
+        "node": "Bukit Gombak",
+        "destinationOpeningDate": "10 March 1990",
+        "destinationCode": "NS3",
+        "weight": {
+          "peakHour": 12,
+          "nonPeakHour": 10,
+          "nightTime": 10,
+          "default": 1
+        }
+      },
+      {
+        "originCode": "NS4",
+        "originOpeningDate": "10 March 1990",
+        "node": "Yew Tee",
+        "destinationOpeningDate": "10 February 1996",
+        "destinationCode": "NS5",
+        "weight": {
+          "peakHour": 12,
+          "nonPeakHour": 10,
+          "nightTime": 10,
+          "default": 1
+        }
+      }
+    ],
+    "Yew Tee": [
+      {
+        "originCode": "NS5",
+        "originOpeningDate": "10 February 1996",
+        "node": "Choa Chu Kang",
+        "destinationOpeningDate": "10 March 1990",
+        "destinationCode": "NS4",
+        "weight": {
+          "peakHour": 12,
+          "nonPeakHour": 10,
+          "nightTime": 10,
+          "default": 1
+        }
+      }
+    ],
+    "Outram Park": [
+      {
+        "originCode": "EW16",
+        "originOpeningDate": "12 December 1987",
+        "node": "Tiong Bahru",
+        "destinationOpeningDate": "12 March 1988",
+        "destinationCode": "EW17",
+        "weight": {
+          "peakHour": 10,
+          "nonPeakHour": 10,
+          "nightTime": 10,
+          "default": 1
+        }
+      }
+    ],
+    "Tiong Bahru": [
+      {
+        "originCode": "EW17",
+        "originOpeningDate": "12 March 1988",
+        "node": "Outram Park",
+        "destinationOpeningDate": "12 December 1987",
+        "destinationCode": "EW16",
+        "weight": {
+          "peakHour": 10,
+          "nonPeakHour": 10,
+          "nightTime": 10,
+          "default": 1
+        }
+      },
+      {
+        "originCode": "EW17",
+        "originOpeningDate": "12 March 1988",
+        "node": "Redhill",
+        "destinationOpeningDate": "12 March 1988",
+        "destinationCode": "EW18",
+        "weight": {
+          "peakHour": 10,
+          "nonPeakHour": 10,
+          "nightTime": 10,
+          "default": 1
+        }
+      }
+    ],
+    "Redhill": [
+      {
+        "originCode": "EW18",
+        "originOpeningDate": "12 March 1988",
+        "node": "Tiong Bahru",
+        "destinationOpeningDate": "12 March 1988",
+        "destinationCode": "EW17",
+        "weight": {
+          "peakHour": 10,
+          "nonPeakHour": 10,
+          "nightTime": 10,
+          "default": 1
+        }
+      },
+      {
+        "originCode": "EW18",
+        "originOpeningDate": "12 March 1988",
+        "node": "Queenstown",
+        "destinationOpeningDate": "12 March 1988",
+        "destinationCode": "EW19",
+        "weight": {
+          "peakHour": 10,
+          "nonPeakHour": 10,
+          "nightTime": 10,
+          "default": 1
+        }
+      }
+    ],
+    "Queenstown": [
+      {
+        "originCode": "EW19",
+        "originOpeningDate": "12 March 1988",
+        "node": "Redhill",
+        "destinationOpeningDate": "12 March 1988",
+        "destinationCode": "EW18",
+        "weight": {
+          "peakHour": 10,
+          "nonPeakHour": 10,
+          "nightTime": 10,
+          "default": 1
+        }
+      },
+      {
+        "originCode": "EW19",
+        "originOpeningDate": "12 March 1988",
+        "node": "Commonwealth",
+        "destinationOpeningDate": "12 March 1988",
+        "destinationCode": "EW20",
+        "weight": {
+          "peakHour": 10,
+          "nonPeakHour": 10,
+          "nightTime": 10,
+          "default": 1
+        }
+      }
+    ],
+    "Commonwealth": [
+      {
+        "originCode": "EW20",
+        "originOpeningDate": "12 March 1988",
+        "node": "Queenstown",
+        "destinationOpeningDate": "12 March 1988",
+        "destinationCode": "EW19",
+        "weight": {
+          "peakHour": 10,
+          "nonPeakHour": 10,
+          "nightTime": 10,
+          "default": 1
+        }
+      },
+      {
+        "originCode": "EW20",
+        "originOpeningDate": "12 March 1988",
+        "node": "Buona Vista",
+        "destinationOpeningDate": "12 March 1988",
+        "destinationCode": "EW21",
+        "weight": {
+          "peakHour": 10,
+          "nonPeakHour": 10,
+          "nightTime": 10,
+          "default": 1
+        }
+      }
+    ],
+    "Buona Vista": [
+      {
+        "originCode": "EW21",
+        "originOpeningDate": "12 March 1988",
+        "node": "Commonwealth",
+        "destinationOpeningDate": "12 March 1988",
+        "destinationCode": "EW20",
+        "weight": {
+          "peakHour": 10,
+          "nonPeakHour": 10,
+          "nightTime": 10,
+          "default": 1
+        }
+      },
+      {
+        "originCode": "EW21",
+        "originOpeningDate": "12 March 1988",
+        "node": "Dover",
+        "destinationOpeningDate": "18 October 2001",
+        "destinationCode": "EW22",
+        "weight": {
+          "peakHour": 10,
+          "nonPeakHour": 10,
+          "nightTime": 10,
+          "default": 1
+        }
+      },
+      {
+        "originCode": "CC22",
+        "originOpeningDate": "8 October 2011",
+        "node": "Holland Village",
+        "destinationOpeningDate": "8 October 2011",
+        "destinationCode": "CC21",
+        "weight": {
+          "peakHour": 10,
+          "nonPeakHour": 10,
+          "nightTime": 10,
+          "default": 1
+        }
+      },
+      {
+        "originCode": "CC22",
+        "originOpeningDate": "8 October 2011",
+        "node": "one-north",
+        "destinationOpeningDate": "8 October 2011",
+        "destinationCode": "CC23",
+        "weight": {
+          "peakHour": 10,
+          "nonPeakHour": 10,
+          "nightTime": 10,
+          "default": 1
+        }
+      }
+    ],
+    "Dover": [
+      {
+        "originCode": "EW22",
+        "originOpeningDate": "18 October 2001",
+        "node": "Buona Vista",
+        "destinationOpeningDate": "12 March 1988",
+        "destinationCode": "EW21",
+        "weight": {
+          "peakHour": 10,
+          "nonPeakHour": 10,
+          "nightTime": 10,
+          "default": 1
+        }
+      },
+      {
+        "originCode": "EW22",
+        "originOpeningDate": "18 October 2001",
+        "node": "Clementi",
+        "destinationOpeningDate": "12 March 1988",
+        "destinationCode": "EW23",
+        "weight": {
+          "peakHour": 10,
+          "nonPeakHour": 10,
+          "nightTime": 10,
+          "default": 1
+        }
+      }
+    ],
+    "Clementi": [
+      {
+        "originCode": "EW23",
+        "originOpeningDate": "12 March 1988",
+        "node": "Dover",
+        "destinationOpeningDate": "18 October 2001",
+        "destinationCode": "EW22",
+        "weight": {
+          "peakHour": 10,
+          "nonPeakHour": 10,
+          "nightTime": 10,
+          "default": 1
+        }
+      },
+      {
+        "originCode": "EW23",
+        "originOpeningDate": "12 March 1988",
+        "node": "Jurong East",
+        "destinationOpeningDate": "5 November 1988",
+        "destinationCode": "EW24",
+        "weight": {
+          "peakHour": 10,
+          "nonPeakHour": 10,
+          "nightTime": 10,
+          "default": 1
+        }
+      }
+    ],
+    "Chinese Garden": [
+      {
+        "originCode": "EW25",
+        "originOpeningDate": "5 November 1988",
+        "node": "Jurong East",
+        "destinationOpeningDate": "5 November 1988",
+        "destinationCode": "EW24",
+        "weight": {
+          "peakHour": 10,
+          "nonPeakHour": 10,
+          "nightTime": 10,
+          "default": 1
+        }
+      }
+    ],
+    "Botanic Gardens": [
+      {
+        "originCode": "CC19",
+        "originOpeningDate": "8 October 2011",
+        "node": "Farrer Road",
+        "destinationOpeningDate": "8 October 2011",
+        "destinationCode": "CC20",
+        "weight": {
+          "peakHour": 10,
+          "nonPeakHour": 10,
+          "nightTime": 10,
+          "default": 1
+        }
+      }
+    ],
+    "Farrer Road": [
+      {
+        "originCode": "CC20",
+        "originOpeningDate": "8 October 2011",
+        "node": "Botanic Gardens",
+        "destinationOpeningDate": "8 October 2011",
+        "destinationCode": "CC19",
+        "weight": {
+          "peakHour": 10,
+          "nonPeakHour": 10,
+          "nightTime": 10,
+          "default": 1
+        }
+      },
+      {
+        "originCode": "CC20",
+        "originOpeningDate": "8 October 2011",
+        "node": "Holland Village",
+        "destinationOpeningDate": "8 October 2011",
+        "destinationCode": "CC21",
+        "weight": {
+          "peakHour": 10,
+          "nonPeakHour": 10,
+          "nightTime": 10,
+          "default": 1
+        }
+      }
+    ],
+    "Holland Village": [
+      {
+        "originCode": "CC21",
+        "originOpeningDate": "8 October 2011",
+        "node": "Farrer Road",
+        "destinationOpeningDate": "8 October 2011",
+        "destinationCode": "CC20",
+        "weight": {
+          "peakHour": 10,
+          "nonPeakHour": 10,
+          "nightTime": 10,
+          "default": 1
+        }
+      },
+      {
+        "originCode": "CC21",
+        "originOpeningDate": "8 October 2011",
+        "node": "Buona Vista",
+        "destinationOpeningDate": "8 October 2011",
+        "destinationCode": "CC22",
+        "weight": {
+          "peakHour": 10,
+          "nonPeakHour": 10,
+          "nightTime": 10,
+          "default": 1
+        }
+      }
+    ],
+    "one-north": [
+      {
+        "originCode": "CC23",
+        "originOpeningDate": "8 October 2011",
+        "node": "Buona Vista",
+        "destinationOpeningDate": "8 October 2011",
+        "destinationCode": "CC22",
+        "weight": {
+          "peakHour": 10,
+          "nonPeakHour": 10,
+          "nightTime": 10,
+          "default": 1
+        }
+      },
+      {
+        "originCode": "CC23",
+        "originOpeningDate": "8 October 2011",
+        "node": "Kent Ridge",
+        "destinationOpeningDate": "8 October 2011",
+        "destinationCode": "CC24",
+        "weight": {
+          "peakHour": 10,
+          "nonPeakHour": 10,
+          "nightTime": 10,
+          "default": 1
+        }
+      }
+    ],
+    "Kent Ridge": [
+      {
+        "originCode": "CC24",
+        "originOpeningDate": "8 October 2011",
+        "node": "one-north",
+        "destinationOpeningDate": "8 October 2011",
+        "destinationCode": "CC23",
+        "weight": {
+          "peakHour": 10,
+          "nonPeakHour": 10,
+          "nightTime": 10,
+          "default": 1
+        }
+      },
+      {
+        "originCode": "CC24",
+        "originOpeningDate": "8 October 2011",
+        "node": "Haw Par Villa",
+        "destinationOpeningDate": "8 October 2011",
+        "destinationCode": "CC25",
+        "weight": {
+          "peakHour": 10,
+          "nonPeakHour": 10,
+          "nightTime": 10,
+          "default": 1
+        }
+      }
+    ],
+    "Haw Par Villa": [
+      {
+        "originCode": "CC25",
+        "originOpeningDate": "8 October 2011",
+        "node": "Kent Ridge",
+        "destinationOpeningDate": "8 October 2011",
+        "destinationCode": "CC24",
+        "weight": {
+          "peakHour": 10,
+          "nonPeakHour": 10,
+          "nightTime": 10,
+          "default": 1
+        }
+      }
+    ]
+  }
+}
